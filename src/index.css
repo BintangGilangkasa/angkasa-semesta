@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keyframes Animasi Mengambang Acak */
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-2deg); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+.animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+.animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+.animate-float-3 { animation: float-3 3.5s ease-in-out infinite; }
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.15);
+  }
+  66% {
+    transform: translate(-30px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 10s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
