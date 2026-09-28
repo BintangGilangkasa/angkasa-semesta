@@ -12,7 +12,7 @@ import {
   SiScikitlearn,
   SiGit,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiGooglecloud,
   SiApachekafka,
   SiSelenium,
@@ -109,7 +109,7 @@ export default function SkillsSection() {
     },
     {
       name: "CSS3",
-      icon: <SiCss3 />,
+      icon: <SiCss />,
       colorClass: "hover:text-[#1572B6] hover:border-[#1572B6]/50 hover:shadow-[#1572B6]/20",
       activeClass: "text-[#1572B6] border-[#1572B6]/50 shadow-[#1572B6]/20",
       anim: "animate-float-1"
