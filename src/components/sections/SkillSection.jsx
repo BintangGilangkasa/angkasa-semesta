@@ -12,12 +12,13 @@ import {
   SiScikitlearn,
   SiGit,
   SiHtml5,
-  SiCss,
   SiFigma,
   SiGooglecloud,
   SiApachekafka,
   SiSelenium,
 } from 'react-icons/si';
+
+import { FaCss3 } from 'react-icons/fa';
 
 export default function SkillsSection() {
   // State untuk menyimpan logo yang sedang diketuk/aktif di HP
@@ -110,7 +111,7 @@ export default function SkillsSection() {
     },
     {
       name: "CSS3",
-      icon: <SiCss />,
+      icon: <FaCss3 />,
       colorClass: "hover:text-[#1572B6] hover:border-[#1572B6]/50 hover:shadow-[#1572B6]/20",
       activeClass: "text-[#1572B6] border-[#1572B6]/50 shadow-[#1572B6]/20",
       anim: "animate-float-1"
