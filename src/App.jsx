@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // 👈 Perbaik
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
-import NotFound from './pages/NotFound'; //
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -21,19 +21,17 @@ export default function App() {
         {/* Konten Halaman */}
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
-          
           <main className="grow">
+            
             <Routes>
               {/* Rute Beranda */}
               <Route path="/" element={<Home />} />
-              
-              {/* Rute Catch-All (Halaman Tidak Ditemukan / 404) */}
-              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
 
           <Footer />
         </div>
+
 
       </div>
     </BrowserRouter>

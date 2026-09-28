@@ -1,5 +1,5 @@
 import React from 'react';
-import { educationData } from '../../data/Education';
+import { educationData } from '../../data/education';
 import { GraduationCap, Calendar, Award } from 'lucide-react';
 
 export default function EducationSection() {

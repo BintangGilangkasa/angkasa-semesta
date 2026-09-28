@@ -1,5 +1,5 @@
 import React from 'react';
-import { experiencesData } from '../../data/Experience';
+import { experiencesData } from '../../data/experience';
 import { Briefcase, Calendar, GraduationCap } from 'lucide-react';
 
 export default function ExperienceSection() {

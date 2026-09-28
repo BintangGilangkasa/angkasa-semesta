@@ -3,8 +3,6 @@ import { profileData } from '../../data/profile';
 import { GithubIcon, LinkedinIcon ,InstagramIcon} from '../common/Icons';
 import { Mail, MapPin, ArrowUpRight, MessageCircle } from 'lucide-react';
 
-import { href } from 'react-router-dom';
-
 export default function ContactSection() {
   const email = profileData?.email || 'bintanggilangkasa@gmail.com';
   const location = profileData?.location || 'Salatiga, Jawa Tengah';
@@ -15,7 +13,7 @@ export default function ContactSection() {
       name: 'Whatsapp',
       icon: <MessageCircle className='w-5 h-5'/>,
       href: profileData?.socials?.whatsapp || 'https://whatsapp.com',
-      colorClass: 'hover:border-green hover:text-slate-900 dark:hover:text-green dark:hover:border-slate-500'
+      colorClass: 'hover:border-green-500 hover:text-green-500'
     },
     {
       name: 'GitHub',

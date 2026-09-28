@@ -5,7 +5,7 @@ import { GraduationCap, MapPin } from 'lucide-react';
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 t8ext-center">
         
         {/* Judul Utama */}
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 dark:text-white mb-6">
