@@ -15,5 +15,15 @@ export const experiencesData = [
     period: "Februari 2026 - Juli 2026",
     description: "Membuat dashboard interaktif untuk menganalisis dan Explore Data menggunakan Python",
     skills: ["Python", "Pandas", "Streamlit", "Mathplotlib"]
+  },
+
+  {
+    id: 3,
+    role: "Junior Web Developer",
+    organization: "Digital Talent Scholarship",
+    period: "Juli 2025 - September 2025",
+    description: "Mempelajari fundamental mengenai seorang Web Developer menggunakan PHP",
+    skills: ["HTML", "CSS", "Javascript", "PHP", "XAMPP"]
   }
+
 ];

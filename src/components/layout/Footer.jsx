@@ -1,5 +1,5 @@
 import React from 'react';
-import { profileData } from '../../data/Profile';
+import { profileData } from '../../data/profile';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '../common/Icons';
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
                 {/* Copyright */}
-                <p className="text-sm">
+                <p className="text-sm text-center">
                     © {new Date().getFullYear()} <span className="text-white font-medium">{profileData.name}</span>. All rights reserved.
                 </p>
 

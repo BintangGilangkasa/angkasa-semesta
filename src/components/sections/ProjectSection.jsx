@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectsData } from '../../data/Project'
+import { ProjectsData } from '../../data/project';  
 import { GithubIcon } from '../common/Icons';
 import { ExternalLink, Folder } from 'lucide-react';
 

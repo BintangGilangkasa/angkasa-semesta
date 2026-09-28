@@ -13,6 +13,7 @@ import {
   SiGit,
   SiHtml5,
   SiCss,
+  SiFigma,
   SiGooglecloud,
   SiApachekafka,
   SiSelenium,
@@ -112,6 +113,13 @@ export default function SkillsSection() {
       icon: <SiCss />,
       colorClass: "hover:text-[#1572B6] hover:border-[#1572B6]/50 hover:shadow-[#1572B6]/20",
       activeClass: "text-[#1572B6] border-[#1572B6]/50 shadow-[#1572B6]/20",
+      anim: "animate-float-1"
+    },
+    {
+      name: "Figma",
+      icon: <SiFigma />,
+      colorClass: "hover:text-[#2860EF] hover:border-[#2860EF]/50 hover:shadow-[#2860EF]/20",
+      activeClass: "text-[#2860EF] border-[#2860EF]/50 shadow-[#2860EF]/20",
       anim: "animate-float-1"
     },
     {

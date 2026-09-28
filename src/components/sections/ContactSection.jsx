@@ -1,91 +1,115 @@
 import React from 'react';
-import { profileData } from '../../data/Profile';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { profileData } from '../../data/profile';
+import { GithubIcon, LinkedinIcon ,InstagramIcon} from '../common/Icons';
+import { Mail, MapPin, ArrowUpRight, MessageCircle } from 'lucide-react';
 
-export default function ContactSection() { // <-- PASTIKAN ADA 'export default' DI SINI
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Terima kasih! Pesan Anda telah terkirim.');
-  };
+export default function ContactSection() {
+  const email = profileData?.email || 'bintanggilangkasa@gmail.com';
+  const location = profileData?.location || 'Salatiga, Jawa Tengah';
+
+  // Daftar media sosial (otomatis mengambil dari profileData atau fallback URL)
+  const socials = [
+    {
+      name: 'Whatsapp',
+      icon: <MessageCircle className='w-5 h-5'/>,
+      href: profileData?.socials?.whatsapp || 'https://whatsapp.com',
+      colorClass: 'hover:border-green-500 hover:text-green-500'
+    },
+    {
+      name: 'GitHub',
+      icon: <GithubIcon className="w-5 h-5" />,
+      href: profileData?.socials?.github || 'https://github.com',
+      colorClass: 'hover:border-slate-400 hover:text-slate-900 dark:hover:text-white dark:hover:border-slate-500',
+    },
+    {
+      name: 'LinkedIn',
+      icon: <LinkedinIcon className="w-5 h-5" />,
+      href: profileData?.socials?.linkedin || 'https://linkedin.com',
+      colorClass: 'hover:border-blue-500 hover:text-blue-500',
+    },
+    {
+      name: 'Instagram',
+      icon: <InstagramIcon className="w-5 h-5" />,
+      href: profileData?.socials?.instagram || 'https://instagram.com',
+      colorClass: 'hover:border-pink-500 hover:text-pink-500',
+    },
+  ];
 
   return (
-    <section id="contact" className="py-20 bg-transparent text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        {/* Header / Subtitle */}
+        <div className="max-w-2xl mx-auto space-y-4 mb-12">
+          <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold">
+            Mari Terhubung
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            Mari Berdiskusi & Berkolaborasi
+          </h2>
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+            Saya selalu terbuka untuk peluang karir, proyek menarik, diskusi seputar Sains Data & Web Development, atau sekadar menyapa.
+          </p>
+        </div>
+
+        {/* Action Cards: Email Direct & Lokasi */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-12">
           
-          {/* Info Kontak */}
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Mari Berdiskusi</h2>
-            <p className="text-slate-400 mb-8 leading-relaxed">
-              Saya selalu terbuka untuk berkolaborasi dalam proyek menarik, peluang karir, atau sekadar berdiskusi seputar Data Science & Web Development.
-            </p>
-
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-indigo-500/10 rounded-lg text-indigo-400">
-                  <Mail size={22} />
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-semibold">Email</p>
-                  <a href={`mailto:${profileData.email}`} className="text-slate-200 hover:text-indigo-400 transition-colors">
-                    {profileData.email}
-                  </a>
-                </div>
+          {/* Email Direct Button */}
+          <a
+            href={`mailto:${email}`}
+            className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center justify-between text-left hover:-translate-y-0.5"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
+                <Mail size={22} />
               </div>
-
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-indigo-500/10 rounded-lg text-indigo-400">
-                  <MapPin size={22} />
-                </div>
-                <div>
-                  <p className="text-xs text-slate-400 uppercase font-semibold">Lokasi</p>
-                  <p className="text-slate-200">{profileData.location}</p>
-                </div>
+              <div>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Email Langsung</p>
+                <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  {email}
+                </p>
               </div>
+            </div>
+            <ArrowUpRight size={18} className="text-slate-400 group-hover:text-indigo-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0" />
+          </a>
+
+          {/* Lokasi Card */}
+          <div className="p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-none flex items-center gap-4 text-left">
+            <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl">
+              <MapPin size={22} />
+            </div>
+            <div>
+              <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Domisili</p>
+              <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">
+                {location}
+              </p>
             </div>
           </div>
 
-          {/* Form Kontak */}
-          <form onSubmit={handleSubmit} className="p-8 bg-slate-900 border border-slate-800 rounded-xl space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Nama Anda</label>
-              <input
-                type="text"
-                required
-                placeholder="Masukkan nama"
-                className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors"
-              />
-            </div>
+        </div>
 
-            <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Email Anda</label>
-              <input
-                type="email"
-                required
-                placeholder="nama@email.com"
-                className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">Pesan</label>
-              <textarea
-                rows="4"
-                required
-                placeholder="Tuliskan pesan Anda di sini..."
-                className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-lg text-white focus:outline-none focus:border-indigo-500 transition-colors"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg flex items-center justify-center gap-2 transition-colors shadow-lg shadow-indigo-600/20"
-            >
-              <Send size={18} /> Kirim Pesan
-            </button>
-          </form>
-
+        {/* Media Sosial Bar */}
+        <div className="pt-8 border-t border-slate-200 dark:border-slate-800/80">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-6">
+            Temukan Saya Di Media Sosial
+          </p>
+          
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-2.5 px-5 py-2.5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 rounded-xl text-slate-700 dark:text-slate-300 text-sm font-semibold transition-all duration-300 shadow-sm dark:shadow-none hover:scale-105 ${social.colorClass}`}
+              >
+                {social.icon}
+                <span>{social.name}</span>
+                <ArrowUpRight size={14} className="opacity-50" />
+              </a>
+            ))}
+          </div>
         </div>
 
       </div>
