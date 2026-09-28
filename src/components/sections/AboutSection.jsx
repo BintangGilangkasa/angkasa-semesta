@@ -1,57 +1,31 @@
 import React from 'react';
-import { profileData } from '../../data/Profile';
-import { Code, Database, Sparkles } from 'lucide-react';
+import { profileData } from '../../data/profile';
+import { GraduationCap, MapPin } from 'lucide-react';
 
-function AboutSection() {
-  const highlights = [
-    {
-      icon: <Database className="w-6 h-6 text-indigo-400" />,
-      title: "Data Science & Analytics",
-      description: "Pengolahan data, Eksplorasi Data Analyst (EDA), dan pembuatan model machine learning untuk estimasi dan klasifikasi.",
-    },
-    {
-      icon: <Code className="w-6 h-6 text-indigo-400" />,
-      title: "Web Development",
-      description: "Membangun antarmuka web yang modern, responsif, dan interaktif menggunakan React JS dan Tailwind CSS.",
-    },
-    {
-      icon: <Sparkles className="w-6 h-6 text-indigo-400" />,
-      title: "Spatial Data & Pipeline",
-      description: "Pemrosesan data spasial (GIS), otomasik ETL pipeline, dan ekstraksi data melalui web scraping.",
-    },
-  ];
-
+export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-transparent text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Title */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Tentang Saya</h2>
-          <p className="mt-4 text-slate-400">
-            Kombinasi antara analisis data dan pengembangan web untuk membangun solusi digital yang berorientasi pada data.
+        {/* Judul Utama */}
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 dark:text-white mb-6">
+          Tentang Saya
+        </h2>
+
+        {/* Deskripsi Teks Polos Rata Tengah */}
+        <div className="space-y-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+          <p>
+            Halo! Saya <strong className="text-slate-900 dark:text-white font-semibold">{profileData?.name || "Bintang Gilangkasa"}</strong>, mahasiswa <strong className="text-slate-900 dark:text-white font-semibold">Sains Data</strong> di UIN Salatiga yang berfokus pada alur kerja data dan pengembangan web modern.
+          </p>
+          <p>
+            Minat utama saya mencakup perancangan <span className="text-indigo-600 dark:text-indigo-400 font-medium">end-to-end data pipeline</span>, pemrosesan data spasial, pemodelan Machine Learning, serta pembangunan aplikasi web interaktif berbasis React JS dan Tailwind CSS.
+          </p>
+          <p>
+            Saya senang menggabungkan analisis data berbasis sains dengan antarmuka web yang intuitif untuk menyajikan wawasan data secara efektif.
           </p>
         </div>
-
-        {/* Highlight Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {highlights.map((item, index) => (
-            <div
-              key={index}
-              className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-500/50 transition-all duration-300"
-            >
-              <div className="p-3 bg-indigo-500/10 rounded-lg w-fit mb-4">
-                {item.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
-            </div>
-          ))}
-        </div>
-
+        
       </div>
     </section>
   );
-};
-
-export default AboutSection
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, FileText, Database, Code2 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '../common/Icons';
-import { profileData } from '../../data/Profile';
+import { profileData } from '../../data/profile';
 
 export default function HeroSection() {
   return (
