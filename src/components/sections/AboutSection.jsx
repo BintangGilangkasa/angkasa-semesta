@@ -8,14 +8,14 @@ export default function AboutSection() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 t8ext-center">
         
         {/* Judul Utama */}
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 dark:text-white mb-6">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-white mb-6">
           Tentang Saya
         </h2>
 
         {/* Deskripsi Teks Polos Rata Tengah */}
-        <div className="space-y-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
+        <div className="space-y-4 text-white text-base sm:text-lg leading-relaxed">
           <p>
-            Halo! Saya <strong className="text-slate-900 dark:text-white font-semibold">{profileData?.name || "Bintang Gilangkasa"}</strong>, mahasiswa <strong className="text-slate-900 dark:text-white font-semibold">Sains Data</strong> di UIN Salatiga yang berfokus pada alur kerja data dan pengembangan web modern.
+            Halo! Saya <strong className="text-white font-semibold">{profileData?.name || "Bintang Gilangkasa"}</strong>, mahasiswa <strong className="text-white font-semibold">Sains Data</strong> di UIN Salatiga yang berfokus pada alur kerja data dan pengembangan web modern.
           </p>
           <p>
             Minat utama saya mencakup perancangan <span className="text-indigo-600 dark:text-indigo-400 font-medium">end-to-end data pipeline</span>, pemrosesan data spasial, pemodelan Machine Learning, serta pembangunan aplikasi web interaktif berbasis React JS dan Tailwind CSS.

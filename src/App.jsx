@@ -15,7 +15,7 @@ export default function App() {
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
           <div className="absolute -top-20 -left-20 w-72 sm:w-125 h-72 sm:h-125 bg-indigo-600/30 rounded-full blur-[90px] sm:blur-[120px] animate-blob" />
           <div className="absolute top-[35%] -right-20 w-72 sm:w-125 h-72 sm:h-125 bg-purple-600/30 rounded-full blur-[90px] sm:blur-[120px] animate-blob animation-delay-2000" />
-          <div className="absolute -bottom-20 left-[20%] w-72 sm:w-125 h-72 sm:h-125 bg-cyan-600/30 rounded-full blur-[90px] sm:blur-[120px] animate-blob animation-delay-4000" />
+          <div className="absolute -bottom-20 left-[20%] w-72 sm:w-125 h-72 sm:h-125 bg-yellow-600/30 rounded-full blur-[90px] sm:blur-[120px] animate-blob animation-delay-4000" />
           
           {/* 2. Perbaiki sintaks arbitrary background size Tailwind */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-size:[4rem_4rem]" />

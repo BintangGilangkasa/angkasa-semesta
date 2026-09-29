@@ -54,7 +54,7 @@ export default function ExperienceSection() {
                   <h3 className="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors">
                     {exp.role}
                   </h3>
-                  <span className="text-sm font-medium group-hover:text-white  text-pink-500">
+                  <span className="text-sm font-medium group-hover:text-pink-500  text-white">
                     {exp.organization}
                   </span>
                 </div>

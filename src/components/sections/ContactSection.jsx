@@ -44,12 +44,12 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
+    <section id="contact" className="py-24 bg-transparent text-slate-800 dark:text-white border-t border-slate-800/80 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
         {/* Header / Subtitle */}
         <div className="max-w-2xl mx-auto space-y-4 mb-12">
-          <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold">
+          <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
             Mari Terhubung
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
@@ -66,15 +66,15 @@ export default function ContactSection() {
           {/* Email Direct Button */}
           <a
             href={`mailto:${email}`}
-            className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center justify-between text-left hover:-translate-y-0.5"
+            className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center justify-between text-left hover:-translate-y-0.5"
           >
             <div className="flex items-center gap-4">
-              <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
+              <div className="p-3 bg-indigo-500/10 text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
                 <Mail size={18} />
               </div>
               <div>
-                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Email Langsung</p>
-                <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Email Langsung</p>
+                <p className="text-xs sm:text-sm font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
                   {email}
                 </p>
               </div>
@@ -83,15 +83,15 @@ export default function ContactSection() {
           </a>
 
           {/* Lokasi Card */}
-          <div className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center gap-4 text-left hover:-translate-y-0.5">
+          <div className="group p-5 bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center gap-4 text-left hover:-translate-y-0.5">
             <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
               <MapPin size={22} />
             </div>
             <div>
-              <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+              <p className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
                 Domisili
               </p>
-              <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+              <p className="text-xs sm:text-sm font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
                 {location}
               </p>
             </div>
@@ -100,8 +100,8 @@ export default function ContactSection() {
         </div>
 
         {/* Media Sosial Bar */}
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-800/80">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-6">
+        <div className="pt-8 border-t border-slate-800/80">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-6">
             Temukan Saya Di Media Sosial
           </p>
 
@@ -112,7 +112,7 @@ export default function ContactSection() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-2.5 px-5 py-2.5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 rounded-xl text-slate-700 dark:text-slate-300 text-sm font-semibold transition-all duration-300 shadow-sm dark:shadow-none hover:scale-105 ${social.colorClass}`}
+                className={`flex items-center gap-2.5 px-5 py-2.5 bg-slate-900/80 border border-slate-800/80 rounded-xl text-slate-300 text-sm font-semibold transition-all duration-300 shadow-sm dark:shadow-none hover:scale-105 ${social.colorClass}`}
               >
                 {social.icon}
                 <span>{social.name}</span>

@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import React, {useState} from "react";
+import ThemeToggle from "../common/ThemeToogle";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ export default function Navbar() {
                                 {link.name}
                             </a>
                         ))}
+                        
                     </div>
 
                     {/* Mobile Menu Open */}

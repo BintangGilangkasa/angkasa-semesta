@@ -2,7 +2,7 @@ export const profileData = {
     name: "Bintang Gilangkasa Syailendra",
     title: "Data Scienctist & Web Developer",
     bio: "Mahasiswa Data Science yang berfokus pada Machine Learning, Data Pipeline, dan Pengembangan Aplikasi Web modern.",
-    location: "Salatiga, Jawa Tengah",
+    location: "Salatiga, Indonesia",
     email: "bintanggilangkasaa@gmail.com",
     whatsapp: "https://wa.me/qr/LPJAJ75CA47WJ1",
     instagram: "https://instagram.com/bintanggilangkasaa",
