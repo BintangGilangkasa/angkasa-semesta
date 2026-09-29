@@ -39,6 +39,11 @@ export default function ExperienceSection() {
               {/* Card Konten Pengalaman */}
               <div className="p-6 bg-slate-900/80 border border-slate-800/80 rounded-xl hover:border-indigo-500/50 transition-all duration-300 shadow-lg">
                 
+                {/* Logo Company */}
+                <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl w-fit flex items-center justify-center group-hover:scale-105 transition-transform">
+                  {exp.icon}
+                </div>
+
                 {/* Tanggal/Periode (Tampilan Mobile) */}
                 <div className="sm:hidden flex items-center gap-1.5 text-indigo-400 text-xs font-semibold mb-2">
                   <Calendar size={14} />

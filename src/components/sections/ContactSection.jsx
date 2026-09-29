@@ -1,7 +1,9 @@
 import React from 'react';
 import { profileData } from '../../data/profile';
-import { GithubIcon, LinkedinIcon ,InstagramIcon} from '../common/Icons';
-import { Mail, MapPin, ArrowUpRight, MessageCircle } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, InstagramIcon } from '../common/Icons';
+import { Mail, MapPin, ArrowUpRight, MessageCircle, icons } from 'lucide-react';
+import { FaSpotify } from 'react-icons/fa';
+import { href } from 'react-router-dom';
 
 export default function ContactSection() {
   const email = profileData?.email || 'bintanggilangkasa@gmail.com';
@@ -11,7 +13,7 @@ export default function ContactSection() {
   const socials = [
     {
       name: 'Whatsapp',
-      icon: <MessageCircle className='w-5 h-5'/>,
+      icon: <MessageCircle className='w-5 h-5' />,
       href: profileData?.socials?.whatsapp || 'https://whatsapp.com',
       colorClass: 'hover:border-green-500 hover:text-green-500'
     },
@@ -33,12 +35,18 @@ export default function ContactSection() {
       href: profileData?.socials?.instagram || 'https://instagram.com',
       colorClass: 'hover:border-pink-500 hover:text-pink-500',
     },
+    {
+      name: 'Spotify',
+      icon: <FaSpotify className='w-5 h-5'/>,
+      href: profileData?.socials?.spotify || '',
+      colorClass: 'hover:border-green-600 hover:text-green-600'
+    }
   ];
 
   return (
     <section id="contact" className="py-24 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        
+
         {/* Header / Subtitle */}
         <div className="max-w-2xl mx-auto space-y-4 mb-12">
           <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold">
@@ -54,7 +62,7 @@ export default function ContactSection() {
 
         {/* Action Cards: Email Direct & Lokasi */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-12">
-          
+
           {/* Email Direct Button */}
           <a
             href={`mailto:${email}`}
@@ -62,7 +70,7 @@ export default function ContactSection() {
           >
             <div className="flex items-center gap-4">
               <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
-                <Mail size={22} />
+                <Mail size={18} />
               </div>
               <div>
                 <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Email Langsung</p>
@@ -75,13 +83,15 @@ export default function ContactSection() {
           </a>
 
           {/* Lokasi Card */}
-          <div className="p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 rounded-2xl shadow-sm dark:shadow-none flex items-center gap-4 text-left">
-            <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl">
+          <div className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center gap-4 text-left hover:-translate-y-0.5">
+            <div className="p-3 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
               <MapPin size={22} />
             </div>
             <div>
-              <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Domisili</p>
-              <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100">
+              <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                Domisili
+              </p>
+              <p className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                 {location}
               </p>
             </div>
@@ -94,7 +104,7 @@ export default function ContactSection() {
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-6">
             Temukan Saya Di Media Sosial
           </p>
-          
+
           <div className="flex flex-wrap items-center justify-center gap-3">
             {socials.map((social) => (
               <a

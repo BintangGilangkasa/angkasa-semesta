@@ -9,12 +9,14 @@ export const educationData = [
     gpa: "3.86 / 4.00",
     status: "Mahasiswa Aktif",
     courses: [
+      "Data Management",
       "Machine Learning",
       "Pemrosesan Data",
       "Sistem Basis Data & PostgreSQL",
       "Data Warehousing",
       "Pengembangan Aplikasi Web",
       "Data Streaming",
+      "Visualisasi Data"
     ],
     highlights: [
       "Fokus pada pengembangan end-to-end data pipeline dan Machine Learning Workflow.",
