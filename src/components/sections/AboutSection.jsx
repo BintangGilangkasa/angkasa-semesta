@@ -1,10 +1,9 @@
 import React from 'react';
 import { profileData } from '../../data/profile';
-import { GraduationCap, MapPin } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-transparent text-slate-800 dark:text-white border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-300">
+    <section id="about" className="py-20 bg-transparent text-white border-t border-slate-800/80 transition-colors duration-300">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 t8ext-center">
         
         {/* Judul Utama */}
@@ -18,7 +17,7 @@ export default function AboutSection() {
             Halo! Saya <strong className="text-white font-semibold">{profileData?.name || "Bintang Gilangkasa"}</strong>, mahasiswa <strong className="text-white font-semibold">Sains Data</strong> di UIN Salatiga yang berfokus pada alur kerja data dan pengembangan web modern.
           </p>
           <p>
-            Minat utama saya mencakup perancangan <span className="text-indigo-600 dark:text-indigo-400 font-medium">end-to-end data pipeline</span>, pemrosesan data spasial, pemodelan Machine Learning, serta pembangunan aplikasi web interaktif berbasis React JS dan Tailwind CSS.
+            Minat utama saya mencakup perancangan <span className="text-indigo-400 font-medium">end-to-end data pipeline</span>, pemrosesan data spasial, pemodelan Machine Learning, serta pembangunan aplikasi web interaktif berbasis React JS dan Tailwind CSS.
           </p>
           <p>
             Saya senang menggabungkan analisis data berbasis sains dengan antarmuka web yang intuitif untuk menyajikan wawasan data secara efektif.

@@ -52,7 +52,7 @@ export default function ContactSection() {
           <span className="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
             Mari Terhubung
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
             Mari Berdiskusi & Berkolaborasi
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
@@ -66,7 +66,7 @@ export default function ContactSection() {
           {/* Email Direct Button */}
           <a
             href={`mailto:${email}`}
-            className="group p-5 bg-white/80 dark:bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-sm dark:shadow-none flex items-center justify-between text-left hover:-translate-y-0.5"
+            className="group p-5 bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 rounded-2xl transition-all duration-300 shadow-none flex items-center justify-between text-left hover:-translate-y-0.5"
           >
             <div className="flex items-center gap-4">
               <div className="p-3 bg-indigo-500/10 text-indigo-400 rounded-xl group-hover:scale-110 transition-transform">
