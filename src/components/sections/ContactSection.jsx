@@ -3,7 +3,6 @@ import { profileData } from '../../data/profile';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from '../common/Icons';
 import { Mail, MapPin, ArrowUpRight, MessageCircle, icons } from 'lucide-react';
 import { FaSpotify } from 'react-icons/fa';
-import { href } from 'react-router-dom';
 
 export default function ContactSection() {
   const email = profileData?.email || 'bintanggilangkasa@gmail.com';
