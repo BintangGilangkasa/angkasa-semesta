@@ -13,7 +13,6 @@ import {
   SiGit,
   SiHtml5,
   SiFigma,
-  SiGooglecloud,
   SiApachekafka,
   SiSelenium,
 } from 'react-icons/si';
@@ -122,13 +121,6 @@ export default function SkillsSection() {
       colorClass: "hover:text-[#2860EF] hover:border-[#2860EF]/50 hover:shadow-[#2860EF]/20",
       activeClass: "text-[#2860EF] border-[#2860EF]/50 shadow-[#2860EF]/20",
       anim: "animate-float-1"
-    },
-    {
-      name: "GCP",
-      icon: <SiGooglecloud />,
-      colorClass: "hover:text-[#4285F4] hover:border-[#4285F4]/50 hover:shadow-[#4285F4]/20",
-      activeClass: "text-[#4285F4] border-[#4285F4]/50 shadow-[#4285F4]/20",
-      anim: "animate-float-2"
     },
     {
       name: "Apache Kafka",

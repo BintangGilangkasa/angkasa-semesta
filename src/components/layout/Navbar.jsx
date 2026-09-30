@@ -1,6 +1,5 @@
 import { Menu, X } from "lucide-react";
 import React, {useState} from "react";
-import ThemeToggle from "../common/ThemeToogle";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);

@@ -11,7 +11,7 @@ export default function Footer() {
                     © {new Date().getFullYear()} <span className="text-white font-medium">{profileData.name}</span>. All rights reserved.
                 </p>
 
-                <div className='group text-sm text-center'>
+                <div className='group text-sm text-center cursor-pointer'>
                     <h1>
                         <span className='group-hover:text-purple-800'>#</span>
                         <span className='group-hover:text-green-300'>angkasaa</span>
