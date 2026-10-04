@@ -11,15 +11,6 @@ export default function HeroSection() {
           
           {/* KOLOM KIRI: TEKS & CTA */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 backdrop-blur-md shadow-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span className="text-xs font-semibold text-slate-300 tracking-wide">
-                Terbuka untuk Kolaborasi & Proyek
-              </span>
-            </div>
 
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.15]">
               Membangun <br />
