@@ -7,7 +7,7 @@ export default function EducationSection() {
   const items = Array.isArray(educationData) ? educationData : [educationData];
 
   return (
-    <section id="education" className="py-16 bg-transparent text-white border-t border-slate-800/80">
+    <section id="education" className="py-30 bg-transparent text-white border-t border-slate-800/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}

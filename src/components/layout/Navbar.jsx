@@ -1,15 +1,16 @@
 import { Menu, X } from "lucide-react";
 import React, {useState} from "react";
+import { href } from "react-router-dom";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
         { name: 'Home', href: '#hero' },
-        { name: 'About', href: '#about' },
         { name: 'Project', href: '#project' },
         { name: 'Experience', href: '#experience' },
         { name: 'Education', href: '#education'},
+        { name: 'Review', href: '#testimonials'},
         { name: 'Contact', href: '#contact' }
     ];
 
