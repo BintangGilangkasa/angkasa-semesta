@@ -19,19 +19,19 @@ export default function ContactSection() {
     {
       name: 'GitHub',
       icon: <GithubIcon className="w-5 h-5" />,
-      href: profileData?.socials?.github || 'https://github.com',
+      href: profileData?.socials?.github || 'https://github.com/BintangGilangkasa',
       colorClass: 'hover:border-slate-400 hover:text-slate-900 dark:hover:text-white dark:hover:border-slate-500',
     },
     {
       name: 'LinkedIn',
       icon: <LinkedinIcon className="w-5 h-5" />,
-      href: profileData?.socials?.linkedin || 'https://linkedin.com',
+      href: profileData?.socials?.linkedin || 'https://linkedin.com/in/bintanggilangkasa',
       colorClass: 'hover:border-blue-500 hover:text-blue-500',
     },
     {
       name: 'Instagram',
       icon: <InstagramIcon className="w-5 h-5" />,
-      href: profileData?.socials?.instagram || 'https://instagram.com',
+      href: profileData?.socials?.instagram || 'https://instagram.com/bintanggilangkasaa',
       colorClass: 'hover:border-pink-500 hover:text-pink-500',
     },
     {

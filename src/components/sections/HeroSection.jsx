@@ -86,7 +86,7 @@ export default function HeroSection() {
             {/* Link Media Sosial */}
             <div className="pt-4 flex items-center justify-center lg:justify-start gap-3 text-slate-400 border-t border-slate-800/60 max-w-md mx-auto lg:mx-0">
               <a
-                href="https://github.com"
+                href="https://github.com/BintangGilangkasa"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800/80 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all"
@@ -95,7 +95,7 @@ export default function HeroSection() {
                 <GithubIcon size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/bintanggilangkasa"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800/80 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all"

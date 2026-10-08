@@ -67,7 +67,7 @@ export default function TestimonialSection() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 💥 4. Saat form dikirim, `setTestimonials` dipanggil.
+  // 4. Saat form dikirim, `setTestimonials` dipanggil.
   // Otomatis merevolusi data di React State & memicu useEffect untuk menyimpan ke localStorage!
   const handleSubmit = (e) => {
     e.preventDefault();
