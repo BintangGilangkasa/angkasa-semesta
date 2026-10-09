@@ -4,8 +4,8 @@ export const ProjectsData = [
         title: "Personal Expense Tracker Transactions",
         description: "Pengembangan front-end interaktif untuk manajemen transaksi dan portal pendaftaran menggunakan React dan Tailwind CSS.",
         techStack: ["React JS", "Vite", "Tailwind CSS", "JavaScript"],
-        githubUrl: "https://github.com",
-        demoUrl: "https://demo.com",
+        githubUrl: "https://github.com/BintangGilangkasa/personal-expense-tracker-2",
+        demoUrl: "https://personal-expense-tracker-gamma-ten.vercel.app/login",
         category: "Web Development",
     },
 
