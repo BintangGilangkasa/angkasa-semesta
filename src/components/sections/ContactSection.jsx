@@ -37,7 +37,7 @@ export default function ContactSection() {
     {
       name: 'Spotify',
       icon: <FaSpotify className='w-5 h-5'/>,
-      href: profileData?.socials?.spotify || '',
+      href: profileData?.socials?.spotify || 'https://open.spotify.com/user/p29s56e4f48ijx7np2ut6nw6k?si=8782a1bd81bb41a8',
       colorClass: 'hover:border-green-600 hover:text-green-600'
     }
   ];
